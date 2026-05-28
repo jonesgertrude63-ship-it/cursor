@@ -1,0 +1,35 @@
+# 传统搜索引擎爬虫
+User-agent: *
+Allow: /
+Disallow: /apply-submissions/
+Disallow: /admin/
+Disallow: /api/
+
+# OpenAI / ChatGPT 爬虫
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI 爬虫 (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude) 爬虫
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI 问答引擎
+User-agent: PerplexityBot
+Allow: /
+
+# 智谱、Kimi、文心等国内 AI 爬虫 (通常遵循通用规则，但显式开放利于 GEO)
+User-agent: Bytespider
+Allow: /
+User-agent: YisouSpider
+Allow: /
+
+# 声明站点地图位置 (请确保实际存在该文件)
+Sitemap: https://shitugeo.cn/sitemap.xml
